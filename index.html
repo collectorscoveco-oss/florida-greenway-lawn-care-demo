@@ -3,202 +3,167 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Florida Greenway Lawn Care | Lawn Mowing & Yard Service</title>
-  <meta name="description" content="Florida Greenway Lawn Care provides reliable mowing, edging, blowing, and recurring lawn service. Request a fast lawn quote today.">
+  <title>Florida Greenway Lawn Care | Premium Lawn Mowing & Yard Care</title>
+  <meta name="description" content="Premium recurring lawn mowing, edging, trimming, and blow-off cleanup for Florida homeowners. Request a fast quote from Florida Greenway Lawn Care.">
+  <meta property="og:title" content="Florida Greenway Lawn Care">
+  <meta property="og:description" content="Premium recurring mowing, edging, and yard care for Florida homeowners.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b3d2a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Florida Greenway Lawn Care","description":"Recurring lawn mowing, edging, trimming, and blow-off cleanup for Florida homeowners.","areaServed":"Central Florida","priceRange":"$$","url":"https://collectorscoveco-oss.github.io/florida-greenway-lawn-care-demo/","serviceType":["Lawn mowing","Edging","Blow-off cleanup","Recurring lawn care"]}
+  </script>
 </head>
 <body>
-  <header class="topbar">
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="Florida Greenway Lawn Care home">
-      <span class="logo-leaf">FG</span>
+      <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M27.5 4.8C18.4 5.4 10.2 10.9 6.2 19.1c-1 2-1.4 4.3-1.1 6.5 2.2.3 4.5-.1 6.5-1.1 8.2-4 13.7-12.2 14.3-21.3.1-1.1 1.8-1 1.6.1Z"/><path d="M6.4 25.4c4.2-6.1 9.3-10.9 15.4-14.6"/></svg></span>
       <span><strong>Florida Greenway</strong><small>Lawn Care</small></span>
     </a>
 
-    <nav class="desktop-nav" aria-label="Main navigation">
+    <nav class="nav" data-nav aria-label="Primary navigation">
       <a href="#services">Services</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#service-area">Service Area</a>
+      <a href="#standard">Our Standard</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#areas">Areas</a>
       <a href="#faq">FAQ</a>
     </nav>
 
-    <a class="phone-link" href="tel:+14075550138">Call/Text (407) 555-0138</a>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+14075550138">(407) 555-0138</a>
+      <a class="btn btn-dark" href="#quote">Get quote</a>
+      <button class="menu-toggle" data-menu-toggle aria-label="Open menu"><span></span><span></span></button>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Local lawn mowing • weekly & biweekly routes</p>
-        <h1>Reliable lawn care without the runaround.</h1>
-        <p class="lead">Florida Greenway keeps your yard on schedule with mowing, edging, blow-off cleanup, saved gate/pet notes, and owner-managed quality checks.</p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#quote">Get my free quote</a>
-          <a class="btn btn-ghost" href="#services">See what’s included</a>
+    <section class="hero-section">
+      <div class="hero-media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1800&q=82" alt="">
+        <div class="media-card route-card reveal">
+          <span>Next route</span>
+          <strong>Thursday • 8 lawns</strong>
+          <small>Gate + pet notes ready</small>
         </div>
-
-        <div class="proof-row" aria-label="Trust highlights">
-          <span>✓ Fast quote response</span>
-          <span>✓ Recurring routes</span>
-          <span>✓ Quality checked</span>
+        <div class="media-card quality-card reveal">
+          <strong>98%</strong>
+          <span>on-schedule visits</span>
         </div>
       </div>
 
-      <aside class="quote-card" id="quote" aria-label="Quick quote form">
-        <div class="quote-card-header">
-          <span class="badge">Free estimate</span>
-          <strong>Tell us about your yard</strong>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Premium recurring lawn service</p>
+        <h1>Florida lawns kept sharp, simple, and on schedule.</h1>
+        <p class="hero-lead">A polished lawn care experience for homeowners who want the yard handled without chasing texts, missed visits, or vague pricing.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#quote">Request a free quote</a>
+          <a class="btn btn-glass" href="#standard">See the service standard</a>
         </div>
-        <form action="#" method="get">
-          <label>
-            Street address
-            <input type="text" name="address" placeholder="123 Greenway Dr">
-          </label>
-          <div class="two-col">
-            <label>
-              Frequency
-              <select name="frequency">
-                <option>Biweekly mowing</option>
-                <option>Weekly mowing</option>
-                <option>One-time first cut</option>
-              </select>
-            </label>
-            <label>
-              Yard condition
-              <select name="condition">
-                <option>Maintained</option>
-                <option>A little high</option>
-                <option>Overgrown</option>
-              </select>
-            </label>
-          </div>
-          <label>
-            Best contact
-            <input type="text" name="contact" placeholder="Phone or email">
-          </label>
-          <button class="btn btn-primary btn-full" type="submit">Request quote</button>
-          <p class="microcopy">Demo form only. On the live site this can connect to your Jotform intake.</p>
+        <div class="hero-proof" aria-label="Trust highlights">
+          <span>Weekly & biweekly routes</span>
+          <span>Owner-managed quality</span>
+          <span>Mow • edge • blow</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-strip" aria-label="Service promise">
+      <span>Reliable arrival windows</span><span>Saved access notes</span><span>Clean edging</span><span>Fast quote flow</span><span>Local route planning</span>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="section-kicker reveal"><p class="eyebrow">What we do</p><h2>Core lawn care, packaged like a professional service.</h2></div>
+      <div class="service-showcase">
+        <article class="feature-card large reveal">
+          <div class="card-image"><img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80" alt="Fresh green landscaping and lawn"></div>
+          <div class="card-copy"><span class="pill">Most requested</span><h3>Recurring mow plan</h3><p>Weekly or biweekly mowing with route tracking, last-cut notes, and a clear visit checklist.</p></div>
+        </article>
+        <article class="feature-card reveal"><span class="number">01</span><h3>Precision edging</h3><p>Driveways, sidewalks, patios, and visible hard edges finished cleanly.</p></article>
+        <article class="feature-card reveal"><span class="number">02</span><h3>Blow-off finish</h3><p>Clippings cleared from hard surfaces before the visit is closed.</p></article>
+        <article class="feature-card reveal"><span class="number">03</span><h3>First-cut reset</h3><p>Overgrown yards assessed separately so recurring service starts right.</p></article>
+        <article class="feature-card reveal"><span class="number">04</span><h3>Add-on work</h3><p>Cleanup, mulch, trimming, and haul-away quoted only when needed.</p></article>
+      </div>
+    </section>
+
+    <section id="standard" class="section standard-section">
+      <div class="standard-copy reveal">
+        <p class="eyebrow">The Greenway Standard</p>
+        <h2>Every visit has a finish line.</h2>
+        <p>Professional lawn sites do not make people guess. This section tells customers exactly what happens on a regular visit and what needs a separate quote.</p>
+      </div>
+      <div class="checklist reveal">
+        <label><input checked disabled type="checkbox"> Mow agreed lawn areas</label>
+        <label><input checked disabled type="checkbox"> Edge hard surfaces</label>
+        <label><input checked disabled type="checkbox"> Blow off driveway and walkways</label>
+        <label><input checked disabled type="checkbox"> Close gates before leaving</label>
+        <label><input checked disabled type="checkbox"> Respect pet and access notes</label>
+        <label><input checked disabled type="checkbox"> Report issues before extra work</label>
+      </div>
+    </section>
+
+    <section id="quote" class="quote-section">
+      <div class="quote-shell reveal">
+        <div class="quote-intro">
+          <p class="eyebrow">Fast quote</p>
+          <h2>Get a clean price before we add you to the route.</h2>
+          <p>Use this demo estimator to show how the live Jotform/CRM flow can feel more premium. The result is only a visual estimate.</p>
+          <div class="quote-meta"><span>2-minute form</span><span>No pressure</span><span>Recurring routes first</span></div>
+        </div>
+        <form class="quote-form" data-estimator>
+          <div class="field"><label for="yard-size">Yard size</label><select id="yard-size" name="yard-size"><option value="45">Small yard</option><option value="65" selected>Medium yard</option><option value="90">Large yard</option></select></div>
+          <div class="field"><label for="frequency">Frequency</label><select id="frequency" name="frequency"><option value="0.9">Weekly</option><option value="1" selected>Biweekly</option><option value="1.25">One-time / first cut</option></select></div>
+          <div class="field"><label for="condition">Condition</label><select id="condition" name="condition"><option value="0">Maintained</option><option value="15">A little high</option><option value="35">Overgrown review</option></select></div>
+          <div class="field"><label for="contact">Best contact</label><input id="contact" name="contact" placeholder="Phone or email"></div>
+          <div class="estimate-box"><span>Demo estimate</span><strong data-estimate>$65–$80</strong><small>Final price after review</small></div>
+          <button class="btn btn-primary btn-full" type="submit">Request my route quote</button>
         </form>
-      </aside>
-    </section>
-
-    <section class="trust-band" aria-label="Why homeowners choose Florida Greenway">
-      <div><strong>Mow</strong><span>Clean recurring cuts</span></div>
-      <div><strong>Edge</strong><span>Driveways & walkways</span></div>
-      <div><strong>Blow</strong><span>Hard surfaces cleared</span></div>
-      <div><strong>Track</strong><span>Notes saved every visit</span></div>
-    </section>
-
-    <section id="services" class="section services-section">
-      <div class="section-heading">
-        <p class="eyebrow">Core services</p>
-        <h2>Simple lawn care packages built for Florida growth.</h2>
-        <p>No confusing menu. Start with the basics, then quote add-ons separately when a yard needs extra work.</p>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card main-service">
-          <div class="service-art lawn-lines" aria-hidden="true"></div>
-          <div class="service-copy">
-            <span class="card-label">Most popular</span>
-            <h3>Recurring mowing plan</h3>
-            <p>Weekly or biweekly mowing, edging, and blow-off cleanup for homeowners who want their yard handled consistently.</p>
-            <ul>
-              <li>Route-based scheduling</li>
-              <li>Last-mowed date tracking</li>
-              <li>Gate, pet, and access notes saved</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="service-card compact">
-          <span class="icon">01</span>
-          <h3>Edging</h3>
-          <p>Crisp edges along driveways, sidewalks, patios, and visible hard surfaces.</p>
-        </article>
-        <article class="service-card compact">
-          <span class="icon">02</span>
-          <h3>Blow-off cleanup</h3>
-          <p>Clippings blown clear before the visit is marked complete.</p>
-        </article>
-        <article class="service-card compact">
-          <span class="icon">03</span>
-          <h3>First-cut reset</h3>
-          <p>Overgrown lawns reviewed and priced separately before recurring service starts.</p>
-        </article>
-        <article class="service-card compact">
-          <span class="icon">04</span>
-          <h3>Add-on quotes</h3>
-          <p>Bush trimming, cleanup, mulch, and haul-away quoted when needed.</p>
-        </article>
       </div>
     </section>
 
-    <section class="section clean-split">
-      <div>
-        <p class="eyebrow">How it works</p>
-        <h2>Designed to feel easy from quote to cut.</h2>
-      </div>
-      <div class="process-list">
-        <article><span>1</span><div><h3>Send the yard details</h3><p>Address, schedule preference, yard condition, gate code needs, pets, and photos if useful.</p></div></article>
-        <article><span>2</span><div><h3>Get a clear price</h3><p>Recurring yards get simple pricing. Overgrown or cleanup work is quoted separately.</p></div></article>
-        <article><span>3</span><div><h3>Stay on the route</h3><p>Your yard is tracked by last mow date so it does not disappear from the schedule.</p></div></article>
+    <section id="pricing" class="section pricing-section">
+      <div class="section-kicker reveal"><p class="eyebrow">Simple packages</p><h2>Clear options without overwhelming the customer.</h2></div>
+      <div class="pricing-grid">
+        <article class="price-card reveal"><span>Starter</span><h3>One-time cut</h3><p>For a yard that needs a quick reset or first service review.</p><strong>Quoted</strong></article>
+        <article class="price-card highlighted reveal"><span>Popular</span><h3>Biweekly route</h3><p>Best fit for maintained Florida lawns that need consistent upkeep.</p><strong>From $65</strong></article>
+        <article class="price-card reveal"><span>Premium</span><h3>Weekly route</h3><p>For faster-growing yards, corner lots, or customers who want a sharper finish.</p><strong>From $45</strong></article>
       </div>
     </section>
 
-    <section id="reviews" class="section reviews-section">
-      <div class="review-hero">
-        <p class="eyebrow">Social proof</p>
-        <h2>Professional enough to trust. Small enough to care.</h2>
-        <p>Top lawn sites lead with reviews, trust badges, and clear CTAs. This demo uses the same structure with placeholders ready for real customer reviews.</p>
-      </div>
-      <div class="reviews-grid">
-        <article><div class="stars">★★★★★</div><p>“Showed up when scheduled, did the full mow/edge/blow, and closed the gate.”</p><strong>Future customer review</strong></article>
-        <article><div class="stars">★★★★★</div><p>“Easy quote, clear communication, and the yard looks clean every other week.”</p><strong>Future customer review</strong></article>
-        <article><div class="stars">★★★★★</div><p>“They actually saved my access notes and remembered the dog in the backyard.”</p><strong>Future customer review</strong></article>
-      </div>
-    </section>
-
-    <section id="service-area" class="section area-section">
-      <div class="area-card">
-        <div>
-          <p class="eyebrow">Local SEO section</p>
-          <h2>Lawn mowing service for Florida neighborhoods.</h2>
-          <p>Use this section for the real cities and neighborhoods you want to rank for. Local pages and clear service-area wording are common on the strongest lawn service sites.</p>
-        </div>
-        <div class="area-tags" aria-label="Example service areas">
-          <span>Orlando area</span><span>Winter Garden</span><span>Clermont</span><span>Ocoee</span><span>Apopka</span><span>Nearby routes</span>
-        </div>
+    <section id="areas" class="section areas-section">
+      <div class="area-panel reveal">
+        <div><p class="eyebrow">Local SEO</p><h2>Built to rank by service area.</h2><p>Replace these placeholders with the exact towns and neighborhoods you want Florida Greenway to target.</p></div>
+        <div class="area-tags"><span>Orlando area</span><span>Winter Garden</span><span>Clermont</span><span>Ocoee</span><span>Apopka</span><span>Nearby routes</span></div>
       </div>
     </section>
 
     <section id="faq" class="section faq-section">
-      <div class="section-heading narrow">
-        <p class="eyebrow">FAQ</p>
-        <h2>Questions homeowners search before booking.</h2>
-      </div>
-      <div class="faq-grid">
-        <details open><summary>Do you offer weekly and biweekly mowing?</summary><p>Yes. The demo is built around recurring weekly and biweekly route service.</p></details>
-        <details><summary>What is included in a regular visit?</summary><p>Mowing, edging hard surfaces, and blowing off driveways, sidewalks, walkways, and porches.</p></details>
-        <details><summary>Can I add gate or pet notes?</summary><p>Yes. Gate, pet, access, and service notes are part of the CRM workflow.</p></details>
-        <details><summary>Do overgrown lawns cost extra?</summary><p>Usually. First cuts, cleanup, and overgrown yards should be reviewed before recurring pricing starts.</p></details>
+      <div class="section-kicker reveal"><p class="eyebrow">FAQ</p><h2>Answer the searches customers actually make.</h2></div>
+      <div class="faq-list reveal">
+        <details open><summary>What is included in regular lawn service?</summary><p>Mowing, edging hard surfaces, and blowing off driveways, sidewalks, walkways, and porches.</p></details>
+        <details><summary>Do you offer weekly and biweekly mowing?</summary><p>Yes. The site is structured around recurring route service first.</p></details>
+        <details><summary>Can you handle gate codes and pets?</summary><p>Yes. Gate, pet, and access notes are tracked so each visit has the right context.</p></details>
+        <details><summary>Do overgrown yards cost more?</summary><p>Usually. First cuts and overgrown yards should be reviewed before recurring pricing starts.</p></details>
       </div>
     </section>
 
-    <section class="final-cta">
-      <h2>Ready for a yard that stays on schedule?</h2>
-      <p>Request a quote and get your lawn added to a recurring route.</p>
-      <a class="btn btn-light" href="#quote">Get my free quote</a>
+    <section class="final-cta reveal">
+      <p class="eyebrow">Florida Greenway Lawn Care</p>
+      <h2>Make the yard one less thing to chase.</h2>
+      <a class="btn btn-light" href="#quote">Start with a free quote</a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div><strong>Florida Greenway Lawn Care</strong><span>Mowing • Edging • Blowing • Recurring yard service</span></div>
-    <a href="#top">Back to top ↑</a>
+  <footer class="footer">
+    <div><strong>Florida Greenway Lawn Care</strong><span>Premium recurring mowing, edging, and yard care.</span></div>
+    <a href="#top">Back to top</a>
   </footer>
 
-  <a class="mobile-quote" href="#quote">Get a free quote</a>
+  <a class="sticky-quote" href="#quote">Get quote</a>
+  <script src="script.js"></script>
 </body>
 </html>
